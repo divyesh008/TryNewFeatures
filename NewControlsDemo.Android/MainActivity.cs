@@ -24,13 +24,13 @@ namespace NewControlsDemo.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            Forms.SetFlags(new[]
-            {
-                "CarouselView_Experimental",
-                "IndicatorView_Experimental",
-                "SwipeView_Experimental",
-                "CollectionView_Experimental"
-            });
+            //Forms.SetFlags(new[]
+            //{
+            //    "CarouselView_Experimental",
+            //    "IndicatorView_Experimental",
+            //    "SwipeView_Experimental",
+            //    "CollectionView_Experimental"
+            //});
 
             base.OnCreate(savedInstanceState);
 

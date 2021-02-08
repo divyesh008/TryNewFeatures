@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using NewControlsDemo.Models;
 using NewControlsDemo.Services;
@@ -33,7 +34,14 @@ namespace NewControlsDemo.ViewModels
         public DelegateCommand ShowSwipeViewCommand { get { return new DelegateCommand(async () => await ShowSwipeView()); } }
         private async Task ShowSwipeView()
         {
-            await _navigationService.NavigateAsync(nameof(SwipeViewPage), null);
+            try
+            {
+                await _navigationService.NavigateAsync(nameof(SwipeViewPage), null);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Exception: {ex.Message}");
+            }
         }
 
         public DelegateCommand ShowCollectionVwCommand { get { return new DelegateCommand(async () => await ShowCollectionVw()); } }

@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1931" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1422" />
     <PackageReference Include="Plugin.LocalNotification" Version="5.0.4" />
@@ -37,9 +37,13 @@
   <ItemGroup>
     <None Remove="Font\Roboto-Bold.ttf" />
     <None Remove="Font\Roboto-Regular.ttf" />
+    <None Remove="Font\fa-brands-400.ttf" />
+    <None Remove="Font\fa-solid-900.ttf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Font\Roboto-Bold.ttf" />
     <EmbeddedResource Include="Font\Roboto-Regular.ttf" />
+    <EmbeddedResource Include="Font\fa-brands-400.ttf" />
+    <EmbeddedResource Include="Font\fa-solid-900.ttf" />
   </ItemGroup>
 </Project>

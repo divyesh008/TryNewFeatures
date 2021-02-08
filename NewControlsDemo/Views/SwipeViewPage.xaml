@@ -31,13 +31,16 @@
                 </Frame>
             </SwipeView>
 
-            <SwipeView Margin="15" HorizontalOptions="FillAndExpand">
+            <SwipeView Margin="15" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
                 <SwipeView.RightItems>
                     <SwipeItems Mode="Reveal">
-                        <SwipeItem Text="Subscribe"
+                        <SwipeItem 
                               BackgroundColor="LightYellow"
-                              Invoked="SwipeItem_Reveled">
-                        </SwipeItem>
+                              Invoked="SwipeItem_Reveled"
+                              IconImageSource="ic_tinder_superlike"/>
+                        <SwipeItem Text="Invite"
+                              BackgroundColor="LightBlue"
+                              Invoked="SwipeItem_Reveled"/>
                     </SwipeItems>
                 </SwipeView.RightItems>
                 <Frame BackgroundColor="OrangeRed" IsClippedToBounds="True" BorderColor="AliceBlue"
@@ -54,8 +57,7 @@
                     <SwipeItems Mode="Reveal" SwipeBehaviorOnInvoked="Auto">
                         <SwipeItem Text="Subscribe"
                               BackgroundColor="LightYellow"
-                              Invoked="SwipeItem_Reveled">
-                        </SwipeItem>
+                              Invoked="SwipeItem_Reveled"/>
                     </SwipeItems>
                 </SwipeView.TopItems>
                 <Frame BackgroundColor="DarkOrange" IsClippedToBounds="True" BorderColor="AliceBlue"

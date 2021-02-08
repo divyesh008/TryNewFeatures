@@ -27,13 +27,13 @@ namespace NewControlsDemo.iOS
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            Forms.SetFlags(new[]
-            {
-                "CarouselView_Experimental",
-                "IndicatorView_Experimental",
-                "SwipeView_Experimental",
-                "CollectionView_Experimental"
-            });
+            //Forms.SetFlags(new[]
+            //{
+            //    "CarouselView_Experimental",
+            //    "IndicatorView_Experimental",
+            //    "SwipeView_Experimental",
+            //    "CollectionView_Experimental"
+            //});
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
 

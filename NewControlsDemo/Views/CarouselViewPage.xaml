@@ -40,6 +40,12 @@
                                HeightRequest="180"
                                HorizontalOptions="FillAndExpand"
                                VerticalOptions="Center">
+                                <Frame.Background>
+                                    <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                                        <GradientStop Color="{StaticResource LightSkyBlueColor}" Offset="1"/>
+                                        <GradientStop Color="{StaticResource HeavyBlueColor}" Offset="0.5"/>
+                                    </LinearGradientBrush>
+                                </Frame.Background>
                                 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>

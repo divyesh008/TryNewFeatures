@@ -17,6 +17,7 @@ namespace NewControlsDemo
 
         public App()
         {
+            Device.SetFlags(new[] { "Brush_Experimental", "SwipeView_Experimental" });
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

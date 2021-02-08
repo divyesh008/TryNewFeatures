@@ -11,6 +11,9 @@
         <!-- View Margin Padding-->
         <OnPlatform x:Key="SafeAreaPadding" x:TypeArguments="Thickness" Android="0" iOS="0" />
 
+        <Color x:Key="HeavyBlueColor">#024B6E</Color>
+        <Color x:Key="LightSkyBlueColor">#57BCEC</Color>
+
         <!--Label Style-->
         <Style x:Key="RobotoRegularSize17LabelStyle" TargetType="Label">
             <Setter Property="FontSize" Value="17" />
