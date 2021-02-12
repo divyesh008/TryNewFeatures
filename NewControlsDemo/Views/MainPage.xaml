@@ -12,7 +12,8 @@
              Padding="{StaticResource SafeAreaPadding}" BackgroundColor="WhiteSmoke">
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="0" Padding="0">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="15" FontSize="18"/>
+        <Label HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="15" FontSize="30"
+               FormattedText="{Binding WelcomeText, Converter={StaticResource StringToFormattedTextConverter}}"/>
         <StackLayout BindableLayout.ItemsSource="{Binding DemoOptions}" HorizontalOptions="Center" Spacing="15" >
             <StackLayout Orientation="Horizontal">
                 <Button Text="Carousel" WidthRequest="150" BackgroundColor="DarkOrange" TextColor="White" FontSize="16" CornerRadius="4" Command="{Binding ShowCarouselCommand}"/>

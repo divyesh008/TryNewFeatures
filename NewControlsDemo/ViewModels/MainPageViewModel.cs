@@ -18,6 +18,13 @@ namespace NewControlsDemo.ViewModels
         {
         }
 
+        private string _welcomeText = "Hello Dev! How are you?";
+        public string WelcomeText
+        {
+            get { return _welcomeText; }
+            set { SetProperty(ref _welcomeText, value); }
+        }
+
         private ObservableCollection<ControlsModel> controlsList;
         public ObservableCollection<ControlsModel> ControlsList
         {

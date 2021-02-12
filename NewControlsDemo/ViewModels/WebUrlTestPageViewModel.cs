@@ -9,7 +9,7 @@ namespace NewControlsDemo.ViewModels
         public WebUrlTestPageViewModel(INavigationService navigationService, FacadeService facadeService)
              : base(navigationService, facadeService)
         {
-            AccountPageURL = "http://34.216.71.66/Plaid/Plaid";
+            AccountPageURL = "http://54.244.107.179/Plaid/Plaid"; //"http://34.216.71.66/Plaid/Plaid";
         }
 
         private string _accountPageURL;
