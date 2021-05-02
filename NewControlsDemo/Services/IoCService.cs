@@ -38,6 +38,7 @@ namespace NewControlsDemo.Services
             containerRegistry.RegisterForNavigation<ImgTransformPage, ImgTransformPageViewModel>();
             containerRegistry.RegisterForNavigation<WebUrlTestPage, WebUrlTestPageViewModel>();
             containerRegistry.RegisterForNavigation<TinderPage, TinderPageViewModel>();
+            containerRegistry.RegisterForNavigation<BreadCrumbPage, BreadCrumbPageViewModel>();
         }
 
         /// <summary>

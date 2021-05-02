@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewControlsDemo.Views.BreadCrumbPage"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             xmlns:fontAwesome="clr-namespace:NewControlsDemo.Helpers"
+             Padding="{StaticResource SafeAreaPadding}">
+    <ContentPage.Resources>
+        <Style TargetType="StackLayout">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="LightSkyBlue" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Spacing="0" Padding="0">
+            <ImageButton Source="back" HeightRequest="20" WidthRequest="25" HorizontalOptions="Start"
+                         BackgroundColor="Transparent" 
+                         Command="{Binding BackClickCommand}"/>
+            <CollectionView x:Name="CustomTabsView"
+                            ItemsSource="{Binding MenuItems}"
+                            ItemSizingStrategy="MeasureAllItems"
+                            ItemsUpdatingScrollMode="KeepLastItemInView"
+                            HorizontalScrollBarVisibility="Never"
+                            SelectionMode="Single"
+                            SelectedItem="{Binding CurrentTab, Mode=TwoWay}"
+                            HeightRequest="30"
+                            SelectionChanged="CustomTabsView_SelectionChanged">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" Spacing="5" Padding="0" Margin="0" VerticalOptions="Start">
+                            <Image HeightRequest="25" WidthRequest="25" Aspect="AspectFit" >
+                                <Image.Source>
+                                    <FontImageSource FontFamily="fa_solid" Color="Black"
+                                                     Glyph="{x:Static fontAwesome:FontAwesomeIcons.AngleRight}"/>
+                                </Image.Source>
+                            </Image>
+                            <Label Text="{Binding ProductName}" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Label Text="{Binding SelectedItemName}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Header"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

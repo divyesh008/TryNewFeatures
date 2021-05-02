@@ -85,5 +85,11 @@ namespace NewControlsDemo.ViewModels
             //var img = "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg";
             //DependencyService.Get<IDocumentInteractionController>().OpenFile(file);
         }
+
+        public DelegateCommand ShowBreadCrumbPageCommand { get { return new DelegateCommand(async () => await ShowBreadCrumbPage()); } }
+        private async Task ShowBreadCrumbPage()
+        {
+            await _navigationService.NavigateAsync(nameof(BreadCrumbPage), null);
+        }
     }
 }

@@ -29,6 +29,7 @@
             </StackLayout>
              <StackLayout Orientation="Horizontal">
                 <Button Text="Tinder" WidthRequest="150" BackgroundColor="DarkOrange" TextColor="White" FontSize="16" CornerRadius="4" Command="{Binding ShowTinderPageCommand}"/>
+                <Button Text="Bread Crumb" WidthRequest="150" BackgroundColor="DarkOrange" TextColor="White" FontSize="16" CornerRadius="4" Command="{Binding ShowBreadCrumbPageCommand}"/>
             </StackLayout>
         </StackLayout>
     </StackLayout>

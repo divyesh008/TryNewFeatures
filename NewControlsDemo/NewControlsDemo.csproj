@@ -29,6 +29,7 @@
     <Folder Include="Font\" />
     <Folder Include="Controls\" />
     <Folder Include="Converters\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\ImgTransformPage.xaml.cs">
