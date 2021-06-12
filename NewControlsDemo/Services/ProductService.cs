@@ -34,7 +34,9 @@ namespace NewControlsDemo.Services
                 new Product(){Id = 3, ProductName = "Watches", Price=800, ImageUrl="https://t3.ftcdn.net/jpg/03/01/52/70/240_F_301527093_MsrLRU3oL6lGoF5OCBNGugZ1M4MkZzXm.jpg", IsSelected=false},
                 new Product(){Id = 4, ProductName = "Laptops",Price=800, ImageUrl="https://t4.ftcdn.net/jpg/01/15/21/87/240_F_115218743_uQxtZr8HW2UUYCeB5SdupdUJZQjo7QDr.jpg", IsSelected=false},
                 new Product(){Id = 5, ProductName = "Lights",Price=800, ImageUrl="https://t3.ftcdn.net/jpg/02/83/70/92/240_F_283709280_m9Iwup9tN9ABl2foiHucrjCuvgF7B8Qo.jpg", IsSelected=false},
-                new Product(){Id = 6, ProductName = "Fans",Price=800, ImageUrl="https://t3.ftcdn.net/jpg/03/08/31/58/240_F_308315841_ywBFVnZkKSachVE3KQGlrmLuBHLew5Bk.jpg", IsSelected=false}
+                new Product(){Id = 6, ProductName = "Fans",Price=800, ImageUrl="https://t3.ftcdn.net/jpg/03/08/31/58/240_F_308315841_ywBFVnZkKSachVE3KQGlrmLuBHLew5Bk.jpg", IsSelected=false},
+                new Product(){Id = 7, ProductName = "Fans",Price=800, ImageUrl="https://t3.ftcdn.net/jpg/03/08/31/58/240_F_308315841_ywBFVnZkKSachVE3KQGlrmLuBHLew5Bk.jpg", IsSelected=false},
+                new Product(){Id = 8, ProductName = "Fans",Price=800, ImageUrl="https://t3.ftcdn.net/jpg/03/08/31/58/240_F_308315841_ywBFVnZkKSachVE3KQGlrmLuBHLew5Bk.jpg", IsSelected=false},
             };
         }
     }
